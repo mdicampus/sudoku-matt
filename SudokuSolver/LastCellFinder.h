@@ -20,6 +20,21 @@ public:
         _t2 = t2;
         _t3 = t3;
     }
+    
+    //methodes
+    int sum(){
+        return _t1.sum() + _t2.sum() + _t3.sum();
+    }
+    bool fill(){
+        int S = sum();
+        
+        if S == 45{
+            return FALSE;
+        }
+        else if S < 36{
+            return FALSE;
+        }
+    }
 };
 
 #endif

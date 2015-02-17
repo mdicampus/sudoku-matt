@@ -31,6 +31,9 @@ public:
     cell c3(){
         return _c3;
     }
+    int sum(){
+        return c1().value + c2().value + c3().value;
+    }
     
     // opérateurs
 };

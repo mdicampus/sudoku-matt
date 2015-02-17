@@ -55,11 +55,11 @@
 				52F0ED4B1A9299A9003A450A /* region.h */,
 				52F0ED481A9299A9003A450A /* grid.h */,
 				52F0ED4A1A9299A9003A450A /* longueurChaine.h */,
-				52F0ED491A9299A9003A450A /* LastCellFinder.h */,
 				52F0ED521A9299A9003A450A /* tripleHolder.h */,
 				52F0ED4D1A9299A9003A450A /* rowHolder.h */,
 				52F0ED471A9299A9003A450A /* columnHolder.h */,
 				52F0ED4C1A9299A9003A450A /* regionHolder.h */,
+				52F0ED491A9299A9003A450A /* LastCellFinder.h */,
 				52F0ED511A9299A9003A450A /* test.h */,
 			);
 			name = SudokuSolver;
