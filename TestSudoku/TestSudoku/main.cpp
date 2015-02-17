@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
     c2 = cell(7);
     c3 = cell(3);
     
-    std::cout << "Test: valeur de c3 : " << c3.value << ". Ok: bonne valeur." << std::endl;
+    //std::cout << "Test: valeur de c3 : " << c3.value << ". Ok: bonne valeur." << std::endl;
     
     region r1("234---34-");
     region r2("234---34-");
@@ -37,7 +37,9 @@ int main(int argc, const char * argv[]) {
     
     grid G(r1, r2, r3, r4, r5, r6, r7, r8, r9);
     
-    std::cout << "valeur de cellule NO de region NO en sortie de fonction grid : " << G.NO.NO.value << " mais devrait retourner 2" << std::endl;
+//    std::cout << "valeur de cellule NO de region NO en sortie de fonction grid : " << G.NO.NO.value << " mais devrait retourner 2" << std::endl;
+  
+    G.print();
 
 //    int tt[2];
 //    test(tt);

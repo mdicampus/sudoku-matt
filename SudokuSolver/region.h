@@ -40,6 +40,11 @@ public:
     bool isFull(){
         return ~NO.isEmpty() and ~N.isEmpty() and ~NE.isEmpty() and ~O.isEmpty() and ~C.isEmpty() and ~E.isEmpty() and ~SO.isEmpty() and ~S.isEmpty() and ~SE.isEmpty();
     }
+    void print(){
+        std::cout << NO.value << " " << N.value << " " << NE.value << std::endl;
+        std::cout << O.value << " " << C.value << " " << E.value << std::endl;
+        std::cout << SO.value << " " << S.value << " " << SE.value << std::endl;
+    }
 };
 
 #endif

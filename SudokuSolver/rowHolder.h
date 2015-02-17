@@ -27,6 +27,9 @@ public:
     cell D(){
         return _c3;
     }
+    void print(){
+        std::cout << G().value << " " << C().value << " " << D().value;
+    }
 };
 
 
