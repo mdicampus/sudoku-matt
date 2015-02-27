@@ -15,16 +15,18 @@
 #include "rowHolder.h"
 #include "LastCellFinder.h"
 #include "OnlyOneChoiceInRowVisitor.h"
+#include "OnlyOneChoiceInColumnVisitor.h"
+#include "OnlyOneChoiceInRegionVisitor.h"
 
 int main(int argc, const char * argv[]) {
 
-    region r1("123456789");
-    region r2("456------");
-    region r3("7-9------");
-    region r4("---------");
+    region r1("12-456389");
+    region r2("256789---");
+    region r3("--92-1---");
+    region r4("2--5--6--");
     region r5("---------");
     region r6("---------");
-    region r7("---------");
+    region r7("7-----9--");
     region r8("---------");
     region r9("---------");
     
@@ -48,8 +50,12 @@ int main(int argc, const char * argv[]) {
     grid G(r1, r2, r3, r4, r5, r6, r7, r8, r9);
     G.print();
     
-    OnlyOneChoiceInRowVisitor visitor;
-    G.Accept(visitor);
+    OnlyOneChoiceInRowVisitor visitorRow;
+    OnlyOneChoiceInColumnVisitor visitorColumn;
+    OnlyOneChoiceInRegionVisitor visitorRegion;
+    G.Accept(visitorRow);
+    G.Accept(visitorColumn);
+    G.Accept(visitorRegion);
     G.print();
     
     return 0;

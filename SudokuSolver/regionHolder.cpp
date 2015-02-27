@@ -53,6 +53,7 @@ rowHolder regionHolder::MiddleRow(){
 rowHolder regionHolder::BottomRow(){
     return rowHolder(_SO, _S, _SE);
 }
+
 columnHolder regionHolder::LeftColumn(){
     return columnHolder(_NO, _O, _SO);
 }

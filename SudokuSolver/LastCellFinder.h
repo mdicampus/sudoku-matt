@@ -12,12 +12,12 @@
 
 class LastCellFinder{
 private:
-    tripleHolder & _t1;
-    tripleHolder & _t2;
-    tripleHolder & _t3;
+    tripleHolder _t1;
+    tripleHolder _t2;
+    tripleHolder _t3;
 public:
     // constructeur
-    LastCellFinder(tripleHolder & t1, tripleHolder & t2, tripleHolder & t3);
+    LastCellFinder(tripleHolder t1, tripleHolder t2, tripleHolder t3);
     
     bool fill();
 };

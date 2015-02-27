@@ -10,10 +10,21 @@
 #include "cell.h"
 #include "LastCellFinder.h"
 #include <iostream>
+#include <list>
 
 
 // constructeur
-LastCellFinder::LastCellFinder(tripleHolder & t1, tripleHolder & t2, tripleHolder & t3):_t1(t1), _t2(t2), _t3(t3){
+LastCellFinder::LastCellFinder(tripleHolder t1, tripleHolder t2, tripleHolder t3):_t1(t1), _t2(t2), _t3(t3){
+    std::list<cell*> LCF;
+    LCF.push_back(& t1.c1());
+    LCF.push_back(& t1.c2());
+    LCF.push_back(& t1.c3());
+    LCF.push_back(& t2.c1());
+    LCF.push_back(& t2.c2());
+    LCF.push_back(& t2.c3());
+    LCF.push_back(& t3.c1());
+    LCF.push_back(& t3.c2());
+    LCF.push_back(& t3.c3());
 }
 
 bool LastCellFinder::fill(){
