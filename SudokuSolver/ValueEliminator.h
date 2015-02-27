@@ -11,4 +11,13 @@
 
 #include <stdio.h>
 
+class ValueEliminator {
+private:
+    bool numbers[9] = {false};
+public:
+    void flag(unsigned char iValue);
+    int availableValues();
+    int availableValue();    
+};
+
 #endif /* defined(__TestSudoku__ValueEliminator__) */
