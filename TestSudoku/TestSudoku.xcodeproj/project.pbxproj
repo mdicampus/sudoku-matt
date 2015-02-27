@@ -7,11 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		666ADD001A742CC600061390 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 666ADCFF1A742CC600061390 /* main.cpp */; };
+		662F5CD01A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */; };
+		66709ED01A989B450035D116 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66709ECF1A989B450035D116 /* test.cpp */; };
+		669F56641A93FC3F00277317 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56631A93FC3F00277317 /* main.cpp */; };
+		669F56A31A93FE4900277317 /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F568C1A93FE4900277317 /* cell.cpp */; };
+		669F56A41A93FE4900277317 /* columnHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F568E1A93FE4900277317 /* columnHolder.cpp */; };
+		669F56A51A93FE4900277317 /* grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56901A93FE4900277317 /* grid.cpp */; };
+		669F56A71A93FE4900277317 /* LastCellFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56941A93FE4900277317 /* LastCellFinder.cpp */; };
+		669F56A81A93FE4900277317 /* longueurChaine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56961A93FE4900277317 /* longueurChaine.cpp */; };
+		669F56A91A93FE4900277317 /* region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56981A93FE4900277317 /* region.cpp */; };
+		669F56AA1A93FE4900277317 /* regionHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F569A1A93FE4900277317 /* regionHolder.cpp */; };
+		669F56AB1A93FE4900277317 /* rowHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F569C1A93FE4900277317 /* rowHolder.cpp */; };
+		669F56AC1A93FE4900277317 /* tripleHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56A11A93FE4900277317 /* tripleHolder.cpp */; };
+		66DA51D71A989FA0008898E6 /* IVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66DA51D51A989FA0008898E6 /* IVisitor.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		669F56AE1A93FE4900277317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 660D43581A93FB8500D95E62;
+			remoteInfo = SudokuSolver;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		666ADCFA1A742CC600061390 /* CopyFiles */ = {
+		669F565E1A93FC3F00277317 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,22 +45,36 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		52F0ED461A9299A9003A450A /* cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cell.h; sourceTree = "<group>"; };
-		52F0ED471A9299A9003A450A /* columnHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = columnHolder.h; sourceTree = "<group>"; };
-		52F0ED481A9299A9003A450A /* grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grid.h; sourceTree = "<group>"; };
-		52F0ED491A9299A9003A450A /* LastCellFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastCellFinder.h; sourceTree = "<group>"; };
-		52F0ED4A1A9299A9003A450A /* longueurChaine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longueurChaine.h; sourceTree = "<group>"; };
-		52F0ED4B1A9299A9003A450A /* region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = region.h; sourceTree = "<group>"; };
-		52F0ED4C1A9299A9003A450A /* regionHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regionHolder.h; sourceTree = "<group>"; };
-		52F0ED4D1A9299A9003A450A /* rowHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rowHolder.h; sourceTree = "<group>"; };
-		52F0ED511A9299A9003A450A /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		52F0ED521A9299A9003A450A /* tripleHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tripleHolder.h; sourceTree = "<group>"; };
-		666ADCFC1A742CC600061390 /* TestSudoku */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestSudoku; sourceTree = BUILT_PRODUCTS_DIR; };
-		666ADCFF1A742CC600061390 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlyOneChoiceInRowVisitor.cpp; sourceTree = "<group>"; };
+		662F5CCF1A98D50400495037 /* OnlyOneChoiceInRowVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOneChoiceInRowVisitor.h; sourceTree = "<group>"; };
+		66709ECF1A989B450035D116 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		669F56601A93FC3F00277317 /* TestSudoku */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestSudoku; sourceTree = BUILT_PRODUCTS_DIR; };
+		669F56631A93FC3F00277317 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		669F568C1A93FE4900277317 /* cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
+		669F568D1A93FE4900277317 /* cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cell.h; sourceTree = "<group>"; };
+		669F568E1A93FE4900277317 /* columnHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = columnHolder.cpp; sourceTree = "<group>"; };
+		669F568F1A93FE4900277317 /* columnHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = columnHolder.h; sourceTree = "<group>"; };
+		669F56901A93FE4900277317 /* grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grid.cpp; sourceTree = "<group>"; };
+		669F56911A93FE4900277317 /* grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grid.h; sourceTree = "<group>"; };
+		669F56941A93FE4900277317 /* LastCellFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LastCellFinder.cpp; sourceTree = "<group>"; };
+		669F56951A93FE4900277317 /* LastCellFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastCellFinder.h; sourceTree = "<group>"; };
+		669F56961A93FE4900277317 /* longueurChaine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = longueurChaine.cpp; sourceTree = "<group>"; };
+		669F56971A93FE4900277317 /* longueurChaine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longueurChaine.h; sourceTree = "<group>"; };
+		669F56981A93FE4900277317 /* region.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = region.cpp; sourceTree = "<group>"; };
+		669F56991A93FE4900277317 /* region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = region.h; sourceTree = "<group>"; };
+		669F569A1A93FE4900277317 /* regionHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regionHolder.cpp; sourceTree = "<group>"; };
+		669F569B1A93FE4900277317 /* regionHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regionHolder.h; sourceTree = "<group>"; };
+		669F569C1A93FE4900277317 /* rowHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rowHolder.cpp; sourceTree = "<group>"; };
+		669F569D1A93FE4900277317 /* rowHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rowHolder.h; sourceTree = "<group>"; };
+		669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SudokuSolver.xcodeproj; sourceTree = "<group>"; };
+		669F56A11A93FE4900277317 /* tripleHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tripleHolder.cpp; sourceTree = "<group>"; };
+		669F56A21A93FE4900277317 /* tripleHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tripleHolder.h; sourceTree = "<group>"; };
+		66DA51D51A989FA0008898E6 /* IVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IVisitor.cpp; sourceTree = "<group>"; };
+		66DA51D61A989FA0008898E6 /* IVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVisitor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		666ADCF91A742CC600061390 /* Frameworks */ = {
+		669F565D1A93FC3F00277317 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,59 +84,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52F0ED451A9299A9003A450A /* SudokuSolver */ = {
+		669F56571A93FC3F00277317 = {
 			isa = PBXGroup;
 			children = (
-				52F0ED461A9299A9003A450A /* cell.h */,
-				52F0ED4B1A9299A9003A450A /* region.h */,
-				52F0ED481A9299A9003A450A /* grid.h */,
-				52F0ED4A1A9299A9003A450A /* longueurChaine.h */,
-				52F0ED521A9299A9003A450A /* tripleHolder.h */,
-				52F0ED4D1A9299A9003A450A /* rowHolder.h */,
-				52F0ED471A9299A9003A450A /* columnHolder.h */,
-				52F0ED4C1A9299A9003A450A /* regionHolder.h */,
-				52F0ED491A9299A9003A450A /* LastCellFinder.h */,
-				52F0ED511A9299A9003A450A /* test.h */,
-			);
-			name = SudokuSolver;
-			path = ../SudokuSolver;
-			sourceTree = "<group>";
-		};
-		666ADCF31A742CC600061390 = {
-			isa = PBXGroup;
-			children = (
-				52F0ED451A9299A9003A450A /* SudokuSolver */,
-				666ADCFE1A742CC600061390 /* TestSudoku */,
-				666ADCFD1A742CC600061390 /* Products */,
+				669F56621A93FC3F00277317 /* TestSudoku */,
+				669F56611A93FC3F00277317 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		666ADCFD1A742CC600061390 /* Products */ = {
+		669F56611A93FC3F00277317 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				666ADCFC1A742CC600061390 /* TestSudoku */,
+				669F56601A93FC3F00277317 /* TestSudoku */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		666ADCFE1A742CC600061390 /* TestSudoku */ = {
+		669F56621A93FC3F00277317 /* TestSudoku */ = {
 			isa = PBXGroup;
 			children = (
-				666ADCFF1A742CC600061390 /* main.cpp */,
+				669F56631A93FC3F00277317 /* main.cpp */,
+				669F568B1A93FE4900277317 /* SudokuSolver */,
 			);
 			path = TestSudoku;
+			sourceTree = "<group>";
+		};
+		669F568B1A93FE4900277317 /* SudokuSolver */ = {
+			isa = PBXGroup;
+			children = (
+				669F568C1A93FE4900277317 /* cell.cpp */,
+				669F568D1A93FE4900277317 /* cell.h */,
+				669F568E1A93FE4900277317 /* columnHolder.cpp */,
+				669F568F1A93FE4900277317 /* columnHolder.h */,
+				669F56901A93FE4900277317 /* grid.cpp */,
+				669F56911A93FE4900277317 /* grid.h */,
+				66DA51D51A989FA0008898E6 /* IVisitor.cpp */,
+				66DA51D61A989FA0008898E6 /* IVisitor.h */,
+				669F56941A93FE4900277317 /* LastCellFinder.cpp */,
+				669F56951A93FE4900277317 /* LastCellFinder.h */,
+				669F56961A93FE4900277317 /* longueurChaine.cpp */,
+				669F56971A93FE4900277317 /* longueurChaine.h */,
+				662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */,
+				662F5CCF1A98D50400495037 /* OnlyOneChoiceInRowVisitor.h */,
+				669F56981A93FE4900277317 /* region.cpp */,
+				669F56991A93FE4900277317 /* region.h */,
+				669F569A1A93FE4900277317 /* regionHolder.cpp */,
+				669F569B1A93FE4900277317 /* regionHolder.h */,
+				669F569C1A93FE4900277317 /* rowHolder.cpp */,
+				669F569D1A93FE4900277317 /* rowHolder.h */,
+				669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */,
+				66709ECF1A989B450035D116 /* test.cpp */,
+				669F56A11A93FE4900277317 /* tripleHolder.cpp */,
+				669F56A21A93FE4900277317 /* tripleHolder.h */,
+			);
+			name = SudokuSolver;
+			path = ../../SudokuSolver;
+			sourceTree = "<group>";
+		};
+		669F569F1A93FE4900277317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				669F56AF1A93FE4900277317 /* libSudokuSolver.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		666ADCFB1A742CC600061390 /* TestSudoku */ = {
+		669F565F1A93FC3F00277317 /* TestSudoku */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 666ADD031A742CC600061390 /* Build configuration list for PBXNativeTarget "TestSudoku" */;
+			buildConfigurationList = 669F56671A93FC3F00277317 /* Build configuration list for PBXNativeTarget "TestSudoku" */;
 			buildPhases = (
-				666ADCF81A742CC600061390 /* Sources */,
-				666ADCF91A742CC600061390 /* Frameworks */,
-				666ADCFA1A742CC600061390 /* CopyFiles */,
+				669F565C1A93FC3F00277317 /* Sources */,
+				669F565D1A93FC3F00277317 /* Frameworks */,
+				669F565E1A93FC3F00277317 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -108,53 +166,81 @@
 			);
 			name = TestSudoku;
 			productName = TestSudoku;
-			productReference = 666ADCFC1A742CC600061390 /* TestSudoku */;
+			productReference = 669F56601A93FC3F00277317 /* TestSudoku */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		666ADCF41A742CC600061390 /* Project object */ = {
+		669F56581A93FC3F00277317 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Maxime Bellec";
 				TargetAttributes = {
-					666ADCFB1A742CC600061390 = {
+					669F565F1A93FC3F00277317 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 666ADCF71A742CC600061390 /* Build configuration list for PBXProject "TestSudoku" */;
+			buildConfigurationList = 669F565B1A93FC3F00277317 /* Build configuration list for PBXProject "TestSudoku" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 666ADCF31A742CC600061390;
-			productRefGroup = 666ADCFD1A742CC600061390 /* Products */;
+			mainGroup = 669F56571A93FC3F00277317;
+			productRefGroup = 669F56611A93FC3F00277317 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 669F569F1A93FE4900277317 /* Products */;
+					ProjectRef = 669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				666ADCFB1A742CC600061390 /* TestSudoku */,
+				669F565F1A93FC3F00277317 /* TestSudoku */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		669F56AF1A93FE4900277317 /* libSudokuSolver.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSudokuSolver.dylib;
+			remoteRef = 669F56AE1A93FE4900277317 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
-		666ADCF81A742CC600061390 /* Sources */ = {
+		669F565C1A93FC3F00277317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				666ADD001A742CC600061390 /* main.cpp in Sources */,
+				669F56A41A93FE4900277317 /* columnHolder.cpp in Sources */,
+				669F56641A93FC3F00277317 /* main.cpp in Sources */,
+				662F5CD01A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp in Sources */,
+				669F56AB1A93FE4900277317 /* rowHolder.cpp in Sources */,
+				669F56AC1A93FE4900277317 /* tripleHolder.cpp in Sources */,
+				669F56A31A93FE4900277317 /* cell.cpp in Sources */,
+				66709ED01A989B450035D116 /* test.cpp in Sources */,
+				669F56A51A93FE4900277317 /* grid.cpp in Sources */,
+				669F56AA1A93FE4900277317 /* regionHolder.cpp in Sources */,
+				669F56A71A93FE4900277317 /* LastCellFinder.cpp in Sources */,
+				669F56A81A93FE4900277317 /* longueurChaine.cpp in Sources */,
+				66DA51D71A989FA0008898E6 /* IVisitor.cpp in Sources */,
+				669F56A91A93FE4900277317 /* region.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		666ADD011A742CC600061390 /* Debug */ = {
+		669F56651A93FC3F00277317 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -194,7 +280,7 @@
 			};
 			name = Debug;
 		};
-		666ADD021A742CC600061390 /* Release */ = {
+		669F56661A93FC3F00277317 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,16 +314,33 @@
 			};
 			name = Release;
 		};
-		666ADD041A742CC600061390 /* Debug */ = {
+		669F56681A93FC3F00277317 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../SudokuSolver,
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../SudokuSolver,
+				);
+				LIBRARY_SEARCH_PATHS = ../SudokuSolver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		666ADD051A742CC600061390 /* Release */ = {
+		669F56691A93FC3F00277317 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../SudokuSolver,
+				);
+				LIBRARY_SEARCH_PATHS = ../SudokuSolver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -245,25 +348,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		666ADCF71A742CC600061390 /* Build configuration list for PBXProject "TestSudoku" */ = {
+		669F565B1A93FC3F00277317 /* Build configuration list for PBXProject "TestSudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				666ADD011A742CC600061390 /* Debug */,
-				666ADD021A742CC600061390 /* Release */,
+				669F56651A93FC3F00277317 /* Debug */,
+				669F56661A93FC3F00277317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		666ADD031A742CC600061390 /* Build configuration list for PBXNativeTarget "TestSudoku" */ = {
+		669F56671A93FC3F00277317 /* Build configuration list for PBXNativeTarget "TestSudoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				666ADD041A742CC600061390 /* Debug */,
-				666ADD051A742CC600061390 /* Release */,
+				669F56681A93FC3F00277317 /* Debug */,
+				669F56691A93FC3F00277317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 666ADCF41A742CC600061390 /* Project object */;
+	rootObject = 669F56581A93FC3F00277317 /* Project object */;
 }

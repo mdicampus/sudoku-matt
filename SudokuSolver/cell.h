@@ -11,43 +11,23 @@
 #define TIRET_OU_ENTIER(a) ((a==45)?(0):(a-48))
 
 class cell {
-public:
+private:
     int value;
-    
+public:
     // constructeurs
-    cell(){
-        value = 0;
-    }
-    cell(int nb){
-        if (not (nb>=0 and nb<=9)){
-            throw "Le nombre doit etre compris entre 0 et 9";
-        }
-        if (nb){
-            value = nb;
-        }
-        else{
-            // nb==0
-            value = 0;
-        }
-
-    }
+    cell();
+    cell(int nb);
     
     // methodes
-    bool isEmpty(){
-        return ~bool(value);
-    }
+    bool isEmpty() const;
+    void print() const;
     
     // opérateurs
-    cell & operator=(unsigned char iValue){
-        value = TIRET_OU_ENTIER(iValue);
-        return *this;
-    }
+    cell & operator=(unsigned char iValue);
     // comparaison
-    bool operator==(unsigned char iValue) const {
-        return value == iValue;
-    }
+    bool operator==(unsigned char iValue) const;
     // conversion
-    operator unsigned char() const {return value;}
+    operator unsigned char() const;
     
 };
 

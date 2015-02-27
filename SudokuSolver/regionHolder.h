@@ -12,75 +12,39 @@
 #include "region.h"
 #include "rowHolder.h"
 #include "columnHolder.h"
+
 class regionHolder {
 private:
-    
+    cell & _N;
+    cell & _S;
+    cell & _E;
+    cell & _O;
+    cell & _C;
+    cell & _NO;
+    cell & _NE;
+    cell & _SO;
+    cell & _SE;
 public:
-    cell _N, _S, _E, _O, _C, _NO, _NE, _SO, _SE;
-    
     // constructeurs
-    regionHolder(){
-        cell _N, _S, _E, _O, _C, _NO, _NE, _SO, _SE;
-    }
-    regionHolder(region r){
-        _N = r.N;
-        _S = r.S;
-        _E = r.E;
-        _O = r.O;
-        _C = r.C;
-        _NO = r.NO;
-        _NE = r.NE;
-        _SO = r.SO;
-        _SE = r.SE;
-    }
+    regionHolder(region & r);
     
     // methodes
-    cell N(){
-        return _N;
-    }
-    cell S(){
-        return _S;
-    }
-    cell E(){
-        return _E;
-    }
-    cell O(){
-        return _O;
-    }
-    cell C(){
-        return _C;
-    }
-    cell NO(){
-        return _NO;
-    }
-    cell NE(){
-        return _NE;
-    }
-    cell SO(){
-        return _SO;
-    }
-    cell SE(){
-        return _SE;
-    }
+    cell & N();
+    cell & S();
+    cell & E();
+    cell & O();
+    cell & C();
+    cell & NO();
+    cell & NE();
+    cell & SO();
+    cell & SE();
     
-    rowHolder TopRow(){
-        return rowHolder(_NO, _N, _NE);
-    }
-    rowHolder MiddleRow(){
-        return rowHolder(_O, _C, _E);
-    }
-    rowHolder BottomRow(){
-        return rowHolder(_SO, _S, _SE);
-    }
-    columnHolder LeftColumn(){
-        return columnHolder(_NO, _O, _SO);
-    }
-    columnHolder MiddleColumn(){
-        return columnHolder(_N, _C, _S);
-    }
-    columnHolder RightColumn(){
-        return columnHolder(_NE, _E, _SE);
-    }
+    rowHolder TopRow();
+    rowHolder MiddleRow();
+    rowHolder BottomRow();
+    columnHolder LeftColumn();
+    columnHolder MiddleColumn();
+    columnHolder RightColumn();
     
     // opérateurs
 };

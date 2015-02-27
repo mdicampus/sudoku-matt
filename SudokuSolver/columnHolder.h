@@ -18,15 +18,9 @@ public:
     using tripleHolder::tripleHolder;
     
     //méthodes
-    cell T(){
-        return _c1;
-    }
-    cell C(){
-        return _c2;
-    }
-    cell B(){
-        return _c3;
-    }
+    cell T();
+    cell C();
+    cell B();
 };
 
 #endif

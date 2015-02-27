@@ -8,17 +8,6 @@
 
 #ifndef TestSudoku_longueurChaine_h
 #define TestSudoku_longueurChaine_h
-int  longueurChaine(char* chaine);
-
-int  longueurChaine(char* chaine){
-    int i=0;
-    while (chaine[i]!='\0'){
-        i++;
-        if (i>=15){
-            return 15;
-        }
-    }
-    return i;
-}
+int  longueurChaine(const char* chaine);
 
 #endif

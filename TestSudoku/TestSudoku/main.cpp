@@ -10,41 +10,47 @@
 #include "cell.h"
 #include "region.h"
 #include "grid.h"
-#include "test.h"
 #include "longueurChaine.h"
 #include "tripleHolder.h"
 #include "rowHolder.h"
-#include "columnHolder.h"
-#include "regionHolder.h"
+#include "LastCellFinder.h"
+#include "OnlyOneChoiceInRowVisitor.h"
 
 int main(int argc, const char * argv[]) {
-    cell c1, c2, c3;
-    c1 = cell(8);
-    c2 = cell(7);
-    c3 = cell(3);
+
+    region r1("123456789");
+    region r2("456------");
+    region r3("7-9------");
+    region r4("---------");
+    region r5("---------");
+    region r6("---------");
+    region r7("---------");
+    region r8("---------");
+    region r9("---------");
     
-    //std::cout << "Test: valeur de c3 : " << c3.value << ". Ok: bonne valeur." << std::endl;
-    
-    region r1("234---34-");
-    region r2("234---34-");
-    region r3("234---34-");
-    region r4("234---34-");
-    region r5("234---34-");
-    region r6("234---34-");
-    region r7("234---34-");
-    region r8("234---34-");
-    region r9("234---34-");
+    // LastCellFinder
+    cell a0 = cell(0);
+    cell a1 = cell(1);
+    cell a2 = cell(2);
+    cell a3 = cell(3);
+    cell a4 = cell(4);
+    cell a5 = cell(5);
+    cell a6 = cell(6);
+    cell a7 = cell(7);
+    cell a8 = cell(8);
+    cell a9 = cell(9);
+    tripleHolder t1(a1, a2, a3);
+    tripleHolder t2(a4, a5, a6);
+    tripleHolder t3(a7, a0, a9);
+    LastCellFinder l(t1, t2, t3);
+    l.fill();
     
     grid G(r1, r2, r3, r4, r5, r6, r7, r8, r9);
-    
-//    std::cout << "valeur de cellule NO de region NO en sortie de fonction grid : " << G.NO.NO.value << " mais devrait retourner 2" << std::endl;
-  
     G.print();
-
-//    int tt[2];
-//    test(tt);
-
     
-    // std::cout << "Contenu : " << C.value << "\n";
+    OnlyOneChoiceInRowVisitor visitor;
+    G.Accept(visitor);
+    G.print();
+    
     return 0;
 }

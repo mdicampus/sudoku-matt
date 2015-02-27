@@ -10,6 +10,7 @@
 #ifndef TestSudoku_rowHolder_h
 #define TestSudoku_rowHolder_h
 #include "tripleHolder.h"
+#include <iostream>
 
 class rowHolder : public tripleHolder{
 public:
@@ -18,18 +19,10 @@ public:
     using tripleHolder::tripleHolder;
     
     //méthodes
-    cell G(){
-        return _c1;
-    }
-    cell C(){
-        return _c2;
-    }
-    cell D(){
-        return _c3;
-    }
-    void print(){
-        std::cout << G().value << " " << C().value << " " << D().value;
-    }
+    cell & G();
+    cell & C();
+    cell & D();
+    void print();
 };
 
 
