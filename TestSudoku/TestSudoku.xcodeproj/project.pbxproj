@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5201EF351AA10C860094E338 /* ValueEliminator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5201EF331AA10C860094E338 /* ValueEliminator.cpp */; };
-		528D70261AA0E019002E9F20 /* OnlyOneChoiceInColumnVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 528D70241AA0E019002E9F20 /* OnlyOneChoiceInColumnVisitor.cpp */; };
-		52EB14B21AA0EBA900EC8358 /* OnlyOneChoiceInRegionVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52EB14B01AA0EBA900EC8358 /* OnlyOneChoiceInRegionVisitor.cpp */; };
 		662F5CD01A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */; };
-		66709ED01A989B450035D116 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66709ECF1A989B450035D116 /* test.cpp */; };
+		666468311AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6664682F1AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp */; };
+		666468351AA5A56A00668815 /* SudokuSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 666468331AA5A56A00668815 /* SudokuSolver.cpp */; };
 		669F56641A93FC3F00277317 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56631A93FC3F00277317 /* main.cpp */; };
 		669F56A31A93FE4900277317 /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F568C1A93FE4900277317 /* cell.cpp */; };
 		669F56A41A93FE4900277317 /* columnHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F568E1A93FE4900277317 /* columnHolder.cpp */; };
@@ -22,8 +20,25 @@
 		669F56AA1A93FE4900277317 /* regionHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F569A1A93FE4900277317 /* regionHolder.cpp */; };
 		669F56AB1A93FE4900277317 /* rowHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F569C1A93FE4900277317 /* rowHolder.cpp */; };
 		669F56AC1A93FE4900277317 /* tripleHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669F56A11A93FE4900277317 /* tripleHolder.cpp */; };
+		66D62BF61AA3735000223D54 /* OnlyOneChoiceInColumnVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62BF41AA3735000223D54 /* OnlyOneChoiceInColumnVisitor.cpp */; };
+		66D62BFA1AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62BF81AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.cpp */; };
+		66D62BFD1AA385EB00223D54 /* ValueEliminator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62BFB1AA385EB00223D54 /* ValueEliminator.cpp */; };
+		66D62C001AA39ED800223D54 /* NoAvailableValueException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62BFE1AA39ED700223D54 /* NoAvailableValueException.cpp */; };
+		66D62C031AA4593A00223D54 /* availableValueContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62C011AA4593A00223D54 /* availableValueContainer.cpp */; };
+		66D62C081AA466EF00223D54 /* OnlySquareVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62C061AA466EF00223D54 /* OnlySquareVisitor.cpp */; };
+		66D62C0C1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62C0A1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp */; };
 		66DA51D71A989FA0008898E6 /* IVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66DA51D51A989FA0008898E6 /* IVisitor.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		669F56AE1A93FE4900277317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 660D43581A93FB8500D95E62;
+			remoteInfo = SudokuSolver;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		669F565E1A93FC3F00277317 /* CopyFiles */ = {
@@ -38,15 +53,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5201EF331AA10C860094E338 /* ValueEliminator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueEliminator.cpp; sourceTree = "<group>"; };
-		5201EF341AA10C860094E338 /* ValueEliminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueEliminator.h; sourceTree = "<group>"; };
-		528D70241AA0E019002E9F20 /* OnlyOneChoiceInColumnVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlyOneChoiceInColumnVisitor.cpp; sourceTree = "<group>"; };
-		528D70251AA0E019002E9F20 /* OnlyOneChoiceInColumnVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOneChoiceInColumnVisitor.h; sourceTree = "<group>"; };
-		52EB14B01AA0EBA900EC8358 /* OnlyOneChoiceInRegionVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlyOneChoiceInRegionVisitor.cpp; sourceTree = "<group>"; };
-		52EB14B11AA0EBA900EC8358 /* OnlyOneChoiceInRegionVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOneChoiceInRegionVisitor.h; sourceTree = "<group>"; };
 		662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlyOneChoiceInRowVisitor.cpp; sourceTree = "<group>"; };
 		662F5CCF1A98D50400495037 /* OnlyOneChoiceInRowVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOneChoiceInRowVisitor.h; sourceTree = "<group>"; };
-		66709ECF1A989B450035D116 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		6664682F1AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoOutOfThreeColumnVisitor.cpp; sourceTree = "<group>"; };
+		666468301AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoOutOfThreeColumnVisitor.h; sourceTree = "<group>"; };
+		666468331AA5A56A00668815 /* SudokuSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SudokuSolver.cpp; sourceTree = "<group>"; };
+		666468341AA5A56A00668815 /* SudokuSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuSolver.h; sourceTree = "<group>"; };
 		669F56601A93FC3F00277317 /* TestSudoku */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestSudoku; sourceTree = BUILT_PRODUCTS_DIR; };
 		669F56631A93FC3F00277317 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		669F568C1A93FE4900277317 /* cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
@@ -65,8 +77,23 @@
 		669F569B1A93FE4900277317 /* regionHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regionHolder.h; sourceTree = "<group>"; };
 		669F569C1A93FE4900277317 /* rowHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rowHolder.cpp; sourceTree = "<group>"; };
 		669F569D1A93FE4900277317 /* rowHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rowHolder.h; sourceTree = "<group>"; };
+		669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SudokuSolver.xcodeproj; sourceTree = "<group>"; };
 		669F56A11A93FE4900277317 /* tripleHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tripleHolder.cpp; sourceTree = "<group>"; };
 		669F56A21A93FE4900277317 /* tripleHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tripleHolder.h; sourceTree = "<group>"; };
+		66D62BF41AA3735000223D54 /* OnlyOneChoiceInColumnVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlyOneChoiceInColumnVisitor.cpp; sourceTree = "<group>"; };
+		66D62BF51AA3735000223D54 /* OnlyOneChoiceInColumnVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOneChoiceInColumnVisitor.h; sourceTree = "<group>"; };
+		66D62BF81AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlyOneChoiceInRegionVisitor.cpp; sourceTree = "<group>"; };
+		66D62BF91AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOneChoiceInRegionVisitor.h; sourceTree = "<group>"; };
+		66D62BFB1AA385EB00223D54 /* ValueEliminator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ValueEliminator.cpp; sourceTree = "<group>"; };
+		66D62BFC1AA385EB00223D54 /* ValueEliminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueEliminator.h; sourceTree = "<group>"; };
+		66D62BFE1AA39ED700223D54 /* NoAvailableValueException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoAvailableValueException.cpp; sourceTree = "<group>"; };
+		66D62BFF1AA39ED800223D54 /* NoAvailableValueException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoAvailableValueException.h; sourceTree = "<group>"; };
+		66D62C011AA4593A00223D54 /* availableValueContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = availableValueContainer.cpp; sourceTree = "<group>"; };
+		66D62C021AA4593A00223D54 /* availableValueContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = availableValueContainer.h; sourceTree = "<group>"; };
+		66D62C061AA466EF00223D54 /* OnlySquareVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlySquareVisitor.cpp; sourceTree = "<group>"; };
+		66D62C071AA466EF00223D54 /* OnlySquareVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlySquareVisitor.h; sourceTree = "<group>"; };
+		66D62C0A1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoOutOfThreeRowVisitor.cpp; sourceTree = "<group>"; };
+		66D62C0B1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoOutOfThreeRowVisitor.h; sourceTree = "<group>"; };
 		66DA51D51A989FA0008898E6 /* IVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IVisitor.cpp; sourceTree = "<group>"; };
 		66DA51D61A989FA0008898E6 /* IVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVisitor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,38 +137,58 @@
 		669F568B1A93FE4900277317 /* SudokuSolver */ = {
 			isa = PBXGroup;
 			children = (
+				66D62C011AA4593A00223D54 /* availableValueContainer.cpp */,
+				66D62C021AA4593A00223D54 /* availableValueContainer.h */,
 				669F568C1A93FE4900277317 /* cell.cpp */,
 				669F568D1A93FE4900277317 /* cell.h */,
-				669F56981A93FE4900277317 /* region.cpp */,
-				669F56991A93FE4900277317 /* region.h */,
-				669F56901A93FE4900277317 /* grid.cpp */,
-				669F56911A93FE4900277317 /* grid.h */,
-				669F56A11A93FE4900277317 /* tripleHolder.cpp */,
-				669F56A21A93FE4900277317 /* tripleHolder.h */,
 				669F568E1A93FE4900277317 /* columnHolder.cpp */,
 				669F568F1A93FE4900277317 /* columnHolder.h */,
-				669F569C1A93FE4900277317 /* rowHolder.cpp */,
-				669F569D1A93FE4900277317 /* rowHolder.h */,
-				669F569A1A93FE4900277317 /* regionHolder.cpp */,
-				669F569B1A93FE4900277317 /* regionHolder.h */,
-				669F56941A93FE4900277317 /* LastCellFinder.cpp */,
-				669F56951A93FE4900277317 /* LastCellFinder.h */,
+				669F56901A93FE4900277317 /* grid.cpp */,
+				669F56911A93FE4900277317 /* grid.h */,
 				66DA51D51A989FA0008898E6 /* IVisitor.cpp */,
 				66DA51D61A989FA0008898E6 /* IVisitor.h */,
-				662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */,
-				662F5CCF1A98D50400495037 /* OnlyOneChoiceInRowVisitor.h */,
-				528D70241AA0E019002E9F20 /* OnlyOneChoiceInColumnVisitor.cpp */,
-				528D70251AA0E019002E9F20 /* OnlyOneChoiceInColumnVisitor.h */,
-				52EB14B01AA0EBA900EC8358 /* OnlyOneChoiceInRegionVisitor.cpp */,
-				52EB14B11AA0EBA900EC8358 /* OnlyOneChoiceInRegionVisitor.h */,
-				5201EF331AA10C860094E338 /* ValueEliminator.cpp */,
-				5201EF341AA10C860094E338 /* ValueEliminator.h */,
-				66709ECF1A989B450035D116 /* test.cpp */,
+				669F56941A93FE4900277317 /* LastCellFinder.cpp */,
+				669F56951A93FE4900277317 /* LastCellFinder.h */,
 				669F56961A93FE4900277317 /* longueurChaine.cpp */,
 				669F56971A93FE4900277317 /* longueurChaine.h */,
+				66D62BFE1AA39ED700223D54 /* NoAvailableValueException.cpp */,
+				66D62BFF1AA39ED800223D54 /* NoAvailableValueException.h */,
+				66D62BF41AA3735000223D54 /* OnlyOneChoiceInColumnVisitor.cpp */,
+				66D62BF51AA3735000223D54 /* OnlyOneChoiceInColumnVisitor.h */,
+				66D62BF81AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.cpp */,
+				66D62BF91AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.h */,
+				662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */,
+				662F5CCF1A98D50400495037 /* OnlyOneChoiceInRowVisitor.h */,
+				66D62C061AA466EF00223D54 /* OnlySquareVisitor.cpp */,
+				66D62C071AA466EF00223D54 /* OnlySquareVisitor.h */,
+				669F56981A93FE4900277317 /* region.cpp */,
+				669F56991A93FE4900277317 /* region.h */,
+				669F569A1A93FE4900277317 /* regionHolder.cpp */,
+				669F569B1A93FE4900277317 /* regionHolder.h */,
+				669F569C1A93FE4900277317 /* rowHolder.cpp */,
+				669F569D1A93FE4900277317 /* rowHolder.h */,
+				666468331AA5A56A00668815 /* SudokuSolver.cpp */,
+				666468341AA5A56A00668815 /* SudokuSolver.h */,
+				669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */,
+				669F56A11A93FE4900277317 /* tripleHolder.cpp */,
+				669F56A21A93FE4900277317 /* tripleHolder.h */,
+				6664682F1AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp */,
+				666468301AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.h */,
+				66D62C0A1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp */,
+				66D62C0B1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.h */,
+				66D62BFB1AA385EB00223D54 /* ValueEliminator.cpp */,
+				66D62BFC1AA385EB00223D54 /* ValueEliminator.h */,
 			);
 			name = SudokuSolver;
 			path = ../../SudokuSolver;
+			sourceTree = "<group>";
+		};
+		669F569F1A93FE4900277317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				669F56AF1A93FE4900277317 /* libSudokuSolver.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +235,12 @@
 			mainGroup = 669F56571A93FC3F00277317;
 			productRefGroup = 669F56611A93FC3F00277317 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 669F569F1A93FE4900277317 /* Products */;
+					ProjectRef = 669F569E1A93FE4900277317 /* SudokuSolver.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				669F565F1A93FC3F00277317 /* TestSudoku */,
@@ -195,25 +248,40 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		669F56AF1A93FE4900277317 /* libSudokuSolver.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libSudokuSolver.dylib;
+			remoteRef = 669F56AE1A93FE4900277317 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		669F565C1A93FC3F00277317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528D70261AA0E019002E9F20 /* OnlyOneChoiceInColumnVisitor.cpp in Sources */,
 				669F56A41A93FE4900277317 /* columnHolder.cpp in Sources */,
 				669F56641A93FC3F00277317 /* main.cpp in Sources */,
+				66D62C031AA4593A00223D54 /* availableValueContainer.cpp in Sources */,
 				662F5CD01A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp in Sources */,
 				669F56AB1A93FE4900277317 /* rowHolder.cpp in Sources */,
-				5201EF351AA10C860094E338 /* ValueEliminator.cpp in Sources */,
+				66D62BFA1AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.cpp in Sources */,
 				669F56AC1A93FE4900277317 /* tripleHolder.cpp in Sources */,
 				669F56A31A93FE4900277317 /* cell.cpp in Sources */,
-				52EB14B21AA0EBA900EC8358 /* OnlyOneChoiceInRegionVisitor.cpp in Sources */,
-				66709ED01A989B450035D116 /* test.cpp in Sources */,
 				669F56A51A93FE4900277317 /* grid.cpp in Sources */,
+				666468351AA5A56A00668815 /* SudokuSolver.cpp in Sources */,
+				66D62C001AA39ED800223D54 /* NoAvailableValueException.cpp in Sources */,
 				669F56AA1A93FE4900277317 /* regionHolder.cpp in Sources */,
+				66D62C081AA466EF00223D54 /* OnlySquareVisitor.cpp in Sources */,
+				666468311AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp in Sources */,
 				669F56A71A93FE4900277317 /* LastCellFinder.cpp in Sources */,
+				66D62BFD1AA385EB00223D54 /* ValueEliminator.cpp in Sources */,
+				66D62C0C1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp in Sources */,
 				669F56A81A93FE4900277317 /* longueurChaine.cpp in Sources */,
+				66D62BF61AA3735000223D54 /* OnlyOneChoiceInColumnVisitor.cpp in Sources */,
 				66DA51D71A989FA0008898E6 /* IVisitor.cpp in Sources */,
 				669F56A91A93FE4900277317 /* region.cpp in Sources */,
 			);

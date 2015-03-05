@@ -23,8 +23,7 @@ bool grid::isFull() const{
 }
 
 void grid::Accept(IVisitor & visitor){
-    // TODO
-    std::cout << "résultat de la visite : " << visitor.Visit(*this) << "\n";
+    visitor.Visit(*this);
 };
 
 void grid::print(){

@@ -16,9 +16,8 @@ bool OnlyOneChoiceInRowVisitor::Visit(grid & ioGrid) const{
     // on essaie de repmlir chaque ligne jusqu'a epuisement
     // des qu'une ligne a été remplie, on retourne 1. Sinon
     // on retourne 0.
-    std::cout << "incoming OnlyOneChoiceInRowVisitor::Visit \n";
-    
-    return LastCellFinder(ioGrid.hNO.TopRow(), ioGrid.hN.TopRow(), ioGrid.hNE.TopRow()).fill()
+    return
+       LastCellFinder(ioGrid.hNO.TopRow(), ioGrid.hN.TopRow(), ioGrid.hNE.TopRow()).fill()
     or LastCellFinder(ioGrid.hNO.MiddleRow(), ioGrid.hN.MiddleRow(), ioGrid.hNE.MiddleRow()).fill()
     or LastCellFinder(ioGrid.hNO.BottomRow(), ioGrid.hN.BottomRow(), ioGrid.hNE.BottomRow()).fill()
     
@@ -29,6 +28,4 @@ bool OnlyOneChoiceInRowVisitor::Visit(grid & ioGrid) const{
     or LastCellFinder(ioGrid.hSO.TopRow(), ioGrid.hS.TopRow(), ioGrid.hSE.TopRow()).fill()
     or LastCellFinder(ioGrid.hSO.MiddleRow(), ioGrid.hS.MiddleRow(), ioGrid.hSE.MiddleRow()).fill()
     or LastCellFinder(ioGrid.hSO.BottomRow(), ioGrid.hS.BottomRow(), ioGrid.hSE.BottomRow()).fill();
-
-    return 0;
 }

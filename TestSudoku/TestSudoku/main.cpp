@@ -17,46 +17,55 @@
 #include "OnlyOneChoiceInRowVisitor.h"
 #include "OnlyOneChoiceInColumnVisitor.h"
 #include "OnlyOneChoiceInRegionVisitor.h"
+#include "OnlySquareVisitor.h"
+#include "ValueEliminator.h"
+#include "TwoOutOfThreeColumnVisitor.h"
+#include "SudokuSolver.h"
 
 int main(int argc, const char * argv[]) {
+    ValueEliminator e1, e2, e3, e4;
+    e1.flag(1);
+    e1.flag(2);
+    e2.flag(3);
+    e1 = e1 + e2;
+    e3.flag(5);
+    e3.flag(2);
+    e4 = e1 - e3;
 
-    region r1("12-456389");
-    region r2("256789---");
-    region r3("--92-1---");
-    region r4("2--5--6--");
-    region r5("---------");
-    region r6("---------");
-    region r7("7-----9--");
-    region r8("---------");
-    region r9("---------");
+    region r1("-19-----4");
+    region r2("-2-4-71-5");
+    region r3("---5-2-38");
+    region r4("4-28-71-6");
+    region r5("-3-2-9-4-");
+    region r6("7-54-13-9");
+    region r7("98-2-1---");
+    region r8("5-49-6-8-");
+    region r9("2-----19-");
     
-//    // LastCellFinder
-//    cell a0 = cell(0);
-//    cell a1 = cell(1);
-//    cell a2 = cell(2);
-//    cell a3 = cell(3);
-//    cell a4 = cell(4);
-//    cell a5 = cell(5);
-//    cell a6 = cell(6);
-//    cell a7 = cell(7);
-//    cell a8 = cell(8);
-//    cell a9 = cell(9);
-//    tripleHolder t1(a1, a2, a3);
-//    tripleHolder t2(a4, a5, a6);
-//    tripleHolder t3(a7, a0, a9);
-//    LastCellFinder l(t1, t2, t3);
-//    l.fill();
+    // partie 3
+//    region r1("-----6--9");
+//    region r2("--23----1");
+//    region r3("6-3--1-52");
+//    region r4("782----5-");
+//    region r5("---------");
+//    region r6("-9----726");
+//    region r7("24-8--6-5");
+//    region r8("1----48--");
+//    region r9("8--5-----");
+    
     
     grid G(r1, r2, r3, r4, r5, r6, r7, r8, r9);
     G.print();
     
-    OnlyOneChoiceInRowVisitor visitorRow;
-    OnlyOneChoiceInColumnVisitor visitorColumn;
-    OnlyOneChoiceInRegionVisitor visitorRegion;
-    G.Accept(visitorRow);
-    G.Accept(visitorColumn);
-    G.Accept(visitorRegion);
-    G.print();
+    SudokuSolver solver;
+    
+    std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
+    solver.solve(G);
+    std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
+    
+    std::cout << "duration : " << duration;
+    
     
     return 0;
 }

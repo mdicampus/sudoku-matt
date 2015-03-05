@@ -29,6 +29,9 @@ cell::cell(int nb){
     }
 
     // methodes
+void cell::set(int newValue){
+    value = newValue;
+}
 bool cell::isEmpty() const{
         return (!bool(value));
     }
@@ -46,5 +49,8 @@ cell & cell::operator=(unsigned char iValue){
 bool cell::operator==(unsigned char iValue) const {
         return value == iValue;
     }
+bool cell::operator==(int iValue) const {
+    return value == iValue;
+}
     // conversion
 cell::operator unsigned char() const {return value;}

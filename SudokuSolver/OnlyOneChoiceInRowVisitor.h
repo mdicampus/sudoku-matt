@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "IVisitor.h"
 class OnlyOneChoiceInRowVisitor : public IVisitor{
+public:
     bool Visit(grid & ioGrid) const;
 };
 

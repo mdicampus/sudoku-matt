@@ -12,6 +12,8 @@
 #include "region.h"
 #include "rowHolder.h"
 #include "columnHolder.h"
+#include "ValueEliminator.h"
+#include <set>
 
 class regionHolder {
 private:
@@ -27,6 +29,9 @@ private:
 public:
     // constructeurs
     regionHolder(region & r);
+    
+    void flagValues(ValueEliminator & eliminator);
+    bool isValuePresent(int value);
     
     // methodes
     cell & N();

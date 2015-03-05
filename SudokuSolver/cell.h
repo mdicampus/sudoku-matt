@@ -21,11 +21,13 @@ public:
     // methodes
     bool isEmpty() const;
     void print() const;
+    void set(int newValue);
     
     // opérateurs
     cell & operator=(unsigned char iValue);
     // comparaison
     bool operator==(unsigned char iValue) const;
+    bool operator==(int iValue) const;
     // conversion
     operator unsigned char() const;
     

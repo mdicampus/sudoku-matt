@@ -16,6 +16,22 @@ regionHolder::regionHolder(region & r):_N(r.N), _S(r.S), _E(r.E), _O(r.O), _C(r.
 }
 
 // methodes
+bool regionHolder::isValuePresent(int value){
+    return (_NO == value) or (_N == value) or (_NE == value) or (_O == value) or (_C == value) or (_E == value) or (_SO == value) or (_S == value) or (_SE == value);
+}
+
+void regionHolder::flagValues(ValueEliminator & eliminator){
+    eliminator.flag(_NO);
+    eliminator.flag(_N);
+    eliminator.flag(_NE);
+    eliminator.flag(_O);
+    eliminator.flag(_C);
+    eliminator.flag(_E);
+    eliminator.flag(_SO);
+    eliminator.flag(_S);
+    eliminator.flag(_SE);
+}
+
 cell & regionHolder::N(){
     return _N;
 }
@@ -53,7 +69,6 @@ rowHolder regionHolder::MiddleRow(){
 rowHolder regionHolder::BottomRow(){
     return rowHolder(_SO, _S, _SE);
 }
-
 columnHolder regionHolder::LeftColumn(){
     return columnHolder(_NO, _O, _SO);
 }

@@ -12,8 +12,11 @@
 #include "region.h"
 #include "regionHolder.h"
 #include "IVisitor.h"
+#include "TwoOutOfThreeRowVisitor.h"
 
 class grid {
+    friend class TwoOutOfThreeRowVisitor;
+    friend class TwoOutOfThreeColumnVisitor;
 private:
     region N, S, E, O, C, NO, NE, SO, SE;
 public:

@@ -2,7 +2,7 @@
 //  OnlyOneChoiceInColumnVisitor.h
 //  TestSudoku
 //
-//  Created by Matthieu on 27/02/15.
+//  Created by Maxime Bellec on 01/03/2015.
 //  Copyright (c) 2015 Maxime Bellec. All rights reserved.
 //
 
@@ -11,8 +11,8 @@
 
 #include <stdio.h>
 #include "IVisitor.h"
-
 class OnlyOneChoiceInColumnVisitor : public IVisitor{
+public:
     bool Visit(grid & ioGrid) const;
 };
 

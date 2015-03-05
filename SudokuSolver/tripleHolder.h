@@ -9,6 +9,8 @@
 #ifndef TestSudoku_tripleHolder_h
 #define TestSudoku_tripleHolder_h
 #include "cell.h"
+#include "ValueEliminator.h"
+#include <set>
 
 class tripleHolder {
 protected:
@@ -20,11 +22,19 @@ public:
     tripleHolder(cell & c1, cell & c2, cell & c3);
     
     // methodes
+    void flagValues(ValueEliminator & eliminator);
+    bool isValuePresent(int value);
+    int holes();
+    void fill(int value);
+    std::set<int> values();
+    
     cell & c1();
     cell & c2();
     cell & c3();
     
     // opérateurs
+    //copy constructor
+//    tripleHolder(tripleHolder & other);
 };
 
 #endif
