@@ -13,10 +13,10 @@
 #include "availableValueContainer.h"
 class ValueEliminator {
 private:
-    bool numbers[10];
+    bool numbers[9];
 public:
     ValueEliminator();
-    ValueEliminator(bool n0, bool n1, bool n2, bool n3, bool n4, bool n5, bool n6, bool n7, bool n8, bool n9);
+    ValueEliminator(bool n1, bool n2, bool n3, bool n4, bool n5, bool n6, bool n7, bool n8, bool n9);
     
     void flag(int iValue);
     int availableValues();
