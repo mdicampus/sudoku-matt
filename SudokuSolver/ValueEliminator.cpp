@@ -49,19 +49,19 @@ ValueEliminator::ValueEliminator():numbers{false,  false,  false,  false,  false
 ValueEliminator::ValueEliminator(bool n0, bool n1, bool n2, bool n3, bool n4, bool n5, bool n6, bool n7, bool n8, bool n9):numbers{n0, n1,  n2,  n3,  n4,  n5,  n6,  n7,  n8,  n9}{
 }
 
+// indiquer le chiffre iValue comme déjà vu
 void ValueEliminator::flag(int iValue){
     numbers[iValue] = true;
 }
 
 void ValueEliminator::reset(){
-    for (int i=0;i<=9;i++){
+    for (int i=1;i<=9;i++){
         numbers[i] = false;
     }
 }
 
 int ValueEliminator::otherAvailableValue(int value){
-    int i;
-    for (i=1;i<=9;i++){
+    for (int i=1;i<=9;i++){
         if ((numbers[i] == false) and i != value){
             return i;
         }
@@ -69,6 +69,10 @@ int ValueEliminator::otherAvailableValue(int value){
     throw "Cette fonction ne doit etre appelee que lorsque availableValues()==2";
 }
 
+
+// renvoie le chiffre non-vu s’il en reste exactement un
+// leve une exception si tous les chiffres sont pris
+// renvoie un set<unsigned chart> si plusieurs valeurs sont possibles encore disponibles
 availableValueContainer ValueEliminator::availableValue(){
     availableValueContainer res;
     int nValues = availableValues();
@@ -78,15 +82,16 @@ availableValueContainer ValueEliminator::availableValue(){
         throw ex;
     }
     int i;
-    if (nValues == 8){
+    if (nValues == 1){
         res.onlyOne = true;
         // une seule valeur possible
-        for (i=1;i<=9;i++){
+        i=1;
+        while(i<=9){
             if (numbers[i] == false){
                 res.singleValue = i;
-                res.multipleValues.insert(i);
                 return res;
             }
+            i++;
         }
         throw "On ne devrait pas arriver ici";
     }
@@ -99,11 +104,12 @@ availableValueContainer ValueEliminator::availableValue(){
     return res;
 }
 
+// nombre de chiffres non-vus, c'est-à-dire encore disponibles
 int ValueEliminator::availableValues(){
     int res = 0;
     for (int i=1;i<=9;i++){
         res += numbers[i];
     }
-    // le nombre de chiffre non vu est 9 - le nombre de chiffre vus
+    // le nombre de chiffres non vus est 9 - le nombre de chiffre vus
     return 9 - res;
 }

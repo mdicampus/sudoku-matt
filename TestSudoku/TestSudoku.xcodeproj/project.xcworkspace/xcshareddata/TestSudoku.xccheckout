@@ -10,14 +10,14 @@
 	<string>TestSudoku</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3D41D5278E54C96580EEBA8FEDFB05FDD070C684</key>
+		<key>B17309DFE9A851709F0E3E14B07C39DFC79C78D5</key>
 		<string>github.com:maxbellec/sudoku.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TestSudoku/TestSudoku.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3D41D5278E54C96580EEBA8FEDFB05FDD070C684</key>
+		<key>B17309DFE9A851709F0E3E14B07C39DFC79C78D5</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3D41D5278E54C96580EEBA8FEDFB05FDD070C684</string>
+	<string>B17309DFE9A851709F0E3E14B07C39DFC79C78D5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3D41D5278E54C96580EEBA8FEDFB05FDD070C684</string>
+			<string>B17309DFE9A851709F0E3E14B07C39DFC79C78D5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>sudoku</string>
 		</dict>

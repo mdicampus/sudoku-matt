@@ -1064,7 +1064,7 @@ bool OnlySquareVisitor::Visit(grid & G) const{
         }
     }
     
-    // pour la septième colonne
+    // pour la neuvieme colonne
     eliminator.reset();
     G.hNE.RightColumn().flagValues(eliminator);
     G.hE.RightColumn().flagValues(eliminator);

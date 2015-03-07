@@ -16,10 +16,14 @@ regionHolder::regionHolder(region & r):_N(r.N), _S(r.S), _E(r.E), _O(r.O), _C(r.
 }
 
 // methodes
+
+// renvoie si un chiffre donné est présent dans la région
 bool regionHolder::isValuePresent(int value){
     return (_NO == value) or (_N == value) or (_NE == value) or (_O == value) or (_C == value) or (_E == value) or (_SO == value) or (_S == value) or (_SE == value);
 }
 
+// prend un objet ValueEliminator en entrée
+// identifie les chiffres non-encore utilisés dans la région
 void regionHolder::flagValues(ValueEliminator & eliminator){
     eliminator.flag(_NO);
     eliminator.flag(_N);
