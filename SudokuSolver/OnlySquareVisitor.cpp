@@ -34,7 +34,7 @@ bool OnlySquareVisitor::Visit(grid & G) const{
         // on localise les trous
         // si une region a deux trous, ça ne sert à rien
         if ((G.hNO.TopRow().holes() < 2) and (G.hN.TopRow().holes() < 2) and (G.hNE.TopRow().holes() < 2)){
-            // il y a donc deux regions auxquels il manque une valeur
+            // il y a donc deux regions auxquelles il manque une valeur
             
             if (G.hNO.TopRow().holes() == 1){
                 if (!G.hNO.TopRow().isValuePresent(fValue)){

@@ -31,7 +31,7 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
     G.hNO.BottomRow().flagValues(e3);
     G.hN.BottomRow().flagValues(e3);
     G.hNE.BottomRow().flagValues(e3);
-    // on enleve les valeur de la troisième ligne
+    // on enleve les valeurs de la troisième ligne
     e4 = ~(e1*e2 - e3);
     if (e4.availableValues() > 0){
         // il y a des valeurs correspondantes
@@ -48,14 +48,14 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             
             if ((G.hNO.TopRow().isValuePresent(value) and G.hNE.MiddleRow().isValuePresent(value)) or
                 (G.hNO.MiddleRow().isValuePresent(value) and G.hNE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.N.SO, G.N.S, G.N.SE, 1);
+                res = fill_column(value, G, G.N.SO, G.N.S, G.N.SE, 4);
                 if (res){return true;}
             }
 
             
             if ((G.hNO.TopRow().isValuePresent(value) and G.hN.MiddleRow().isValuePresent(value)) or
                 (G.hNO.MiddleRow().isValuePresent(value) and G.hN.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.NE.SO, G.NE.S, G.NE.SE, 1);
+                res = fill_column(value, G, G.NE.SO, G.NE.S, G.NE.SE, 7);
                 if (res){return true;}
             }
         }
@@ -75,13 +75,13 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             
             if ((G.hNO.TopRow().isValuePresent(value) and G.hNE.BottomRow().isValuePresent(value)) or
                 (G.hNO.BottomRow().isValuePresent(value) and G.hNE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.N.O, G.N.C, G.N.E, 1);
+                res = fill_column(value, G, G.N.O, G.N.C, G.N.E, 4);
                 if (res){return true;}
             }
             
             if ((G.hNO.TopRow().isValuePresent(value) and G.hN.BottomRow().isValuePresent(value)) or
                 (G.hNO.BottomRow().isValuePresent(value) and G.hN.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.NE.O, G.NE.C, G.NE.E, 1);
+                res = fill_column(value, G, G.NE.O, G.NE.C, G.NE.E, 7);
                 if (res){return true;}
             }
         }
@@ -100,12 +100,12 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             }
             if ((G.hNO.MiddleRow().isValuePresent(value) and G.hNE.BottomRow().isValuePresent(value)) or
                 (G.hNO.BottomRow().isValuePresent(value) and G.hNE.MiddleRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.N.NO, G.N.N, G.N.NE, 1);
+                res = fill_column(value, G, G.N.NO, G.N.N, G.N.NE, 4);
                 if (res){return true;}
             }
             if ((G.hNO.MiddleRow().isValuePresent(value) and G.hN.BottomRow().isValuePresent(value)) or
                 (G.hNO.BottomRow().isValuePresent(value) and G.hN.MiddleRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.NE.NO, G.NE.N, G.NE.NE, 1);
+                res = fill_column(value, G, G.NE.NO, G.NE.N, G.NE.NE, 7);
                 if (res){return true;}
             }
         }
@@ -130,7 +130,7 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             value = *it;
             if ((G.hC.TopRow().isValuePresent(value) and G.hE.MiddleRow().isValuePresent(value)) or
                 (G.hC.MiddleRow().isValuePresent(value) and G.hE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.O.SO, G.O.S, G.O.SE, 4);
+                res = fill_column(value, G, G.O.SO, G.O.S, G.O.SE, 1);
                 if (res){return true;}
             }
             if ((G.hO.TopRow().isValuePresent(value) and G.hE.MiddleRow().isValuePresent(value)) or
@@ -140,7 +140,7 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             }
             if ((G.hO.TopRow().isValuePresent(value) and G.hC.MiddleRow().isValuePresent(value)) or
                 (G.hO.MiddleRow().isValuePresent(value) and G.hC.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.E.SO, G.E.S, G.E.SE, 4);
+                res = fill_column(value, G, G.E.SO, G.E.S, G.E.SE, 7);
                 if (res){return true;}
             }
         }
@@ -154,7 +154,7 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             value = *it;
             if ((G.hC.TopRow().isValuePresent(value) and G.hE.BottomRow().isValuePresent(value)) or
                 (G.hC.BottomRow().isValuePresent(value) and G.hE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.O.O, G.O.C, G.O.E, 4);
+                res = fill_column(value, G, G.O.O, G.O.C, G.O.E, 1);
                 if (res){return true;}
             }
             if ((G.hO.TopRow().isValuePresent(value) and G.hE.BottomRow().isValuePresent(value)) or
@@ -164,7 +164,7 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             }
             if ((G.hO.TopRow().isValuePresent(value) and G.hC.BottomRow().isValuePresent(value)) or
                 (G.hO.BottomRow().isValuePresent(value) and G.hC.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.E.O, G.E.C, G.E.E, 4);
+                res = fill_column(value, G, G.E.O, G.E.C, G.E.E, 7);
                 if (res){return true;}
             }
         }
@@ -178,7 +178,7 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             value = *it;
             if ((G.hC.MiddleRow().isValuePresent(value) and G.hE.BottomRow().isValuePresent(value)) or
                 (G.hC.BottomRow().isValuePresent(value) and G.hE.MiddleRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.O.NO, G.O.N, G.O.NE, 4);
+                res = fill_column(value, G, G.O.NO, G.O.N, G.O.NE, 1);
                 if (res){return true;}
             }
             if ((G.hO.MiddleRow().isValuePresent(value) and G.hE.BottomRow().isValuePresent(value)) or
@@ -188,7 +188,7 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             }
             if ((G.hO.MiddleRow().isValuePresent(value) and G.hC.BottomRow().isValuePresent(value)) or
                 (G.hO.BottomRow().isValuePresent(value) and G.hC.MiddleRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.E.NO, G.E.N, G.E.NE, 4);
+                res = fill_column(value, G, G.E.NO, G.E.N, G.E.NE, 7);
                 if (res){return true;}
             }
         }
@@ -213,12 +213,12 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             value = *it;
             if ((G.hS.TopRow().isValuePresent(value) and G.hSE.MiddleRow().isValuePresent(value)) or
                 (G.hS.MiddleRow().isValuePresent(value) and G.hSE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.SO.SO, G.SO.S, G.SO.SE, 7);
+                res = fill_column(value, G, G.SO.SO, G.SO.S, G.SO.SE, 1);
                 if (res){return true;}
             }
             if ((G.hSO.TopRow().isValuePresent(value) and G.hSE.MiddleRow().isValuePresent(value)) or
                 (G.hSO.MiddleRow().isValuePresent(value) and G.hSE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.S.SO, G.S.S, G.S.SE, 7);
+                res = fill_column(value, G, G.S.SO, G.S.S, G.S.SE, 4);
                 if (res){return true;}
             }
             if ((G.hSO.TopRow().isValuePresent(value) and G.hS.MiddleRow().isValuePresent(value)) or
@@ -237,12 +237,12 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             value = *it;
             if ((G.hS.TopRow().isValuePresent(value) and G.hSE.BottomRow().isValuePresent(value)) or
                 (G.hS.BottomRow().isValuePresent(value) and G.hSE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.SO.O, G.SO.C, G.SO.E, 7);
+                res = fill_column(value, G, G.SO.O, G.SO.C, G.SO.E, 1);
                 if (res){return true;}
             }
             if ((G.hSO.TopRow().isValuePresent(value) and G.hSE.BottomRow().isValuePresent(value)) or
                 (G.hSO.BottomRow().isValuePresent(value) and G.hSE.TopRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.S.O, G.S.C, G.S.E, 7);
+                res = fill_column(value, G, G.S.O, G.S.C, G.S.E, 4);
                 if (res){return true;}
             }
             if ((G.hSO.TopRow().isValuePresent(value) and G.hS.BottomRow().isValuePresent(value)) or
@@ -261,12 +261,12 @@ bool TwoOutOfThreeRowVisitor::Visit(grid & G) const{
             value = *it;
             if ((G.hS.MiddleRow().isValuePresent(value) and G.hSE.BottomRow().isValuePresent(value)) or
                 (G.hS.BottomRow().isValuePresent(value) and G.hSE.MiddleRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.SO.NO, G.SO.N, G.SO.NE, 7);
+                res = fill_column(value, G, G.SO.NO, G.SO.N, G.SO.NE, 1);
                 if (res){return true;}
             }
             if ((G.hSO.MiddleRow().isValuePresent(value) and G.hSE.BottomRow().isValuePresent(value)) or
                 (G.hSO.BottomRow().isValuePresent(value) and G.hSE.MiddleRow().isValuePresent(value))  ){
-                res = fill_column(value, G, G.S.NO, G.S.N, G.S.NE, 7);
+                res = fill_column(value, G, G.S.NO, G.S.N, G.S.NE, 4);
                 if (res){return true;}
             }
             if ((G.hSO.MiddleRow().isValuePresent(value) and G.hS.BottomRow().isValuePresent(value)) or
