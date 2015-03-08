@@ -51,7 +51,7 @@ ValueEliminator::ValueEliminator(bool n1, bool n2, bool n3, bool n4, bool n5, bo
 
 // indiquer le chiffre iValue comme déjà vu
 void ValueEliminator::flag(int iValue){
-    numbers[iValue] = true;
+    numbers[iValue-1] = true;
 }
 
 void ValueEliminator::reset(){
@@ -89,6 +89,7 @@ availableValueContainer ValueEliminator::availableValue(){
         while(i<=8){
             if (numbers[i] == false){
                 res.singleValue = i+1;
+                res.multipleValues.insert(i+1);
                 return res;
             }
             i++;
