@@ -32,6 +32,7 @@ public:
     
     void flagValues(ValueEliminator & eliminator);
     bool isValuePresent(int value);
+    bool isFull() const;
     
     // methodes
     cell & N();

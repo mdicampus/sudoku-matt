@@ -17,6 +17,10 @@ regionHolder::regionHolder(region & r):_N(r.N), _S(r.S), _E(r.E), _O(r.O), _C(r.
 
 // methodes
 
+bool regionHolder::isFull() const{
+    return (!_NO.isEmpty()) and (!_N.isEmpty()) and (!_NE.isEmpty()) and (!_O.isEmpty()) and (!_C.isEmpty()) and (!_E.isEmpty()) and (!_SO.isEmpty()) and (!_S.isEmpty()) and (!_SE.isEmpty());
+}
+
 // renvoie si un chiffre donné est présent dans la région
 bool regionHolder::isValuePresent(int value){
     return (_NO == value) or (_N == value) or (_NE == value) or (_O == value) or (_C == value) or (_E == value) or (_SO == value) or (_S == value) or (_SE == value);
