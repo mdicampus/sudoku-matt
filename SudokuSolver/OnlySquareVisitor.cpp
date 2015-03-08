@@ -13,7 +13,6 @@
 
 bool OnlySquareVisitor::Visit(grid & G) const{
     ValueEliminator eliminator;
-    cell target;
     std::set<int> values;
     std::set<int>::iterator it;
     int fValue;

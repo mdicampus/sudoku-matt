@@ -43,26 +43,26 @@ int main(int argc, const char * argv[]) {
 //    region r9("2-----19-");
 
     // Q46 to Q49 : IT WORKS MAVAFACKA
-    region r1("--9634125");
-    region r2("51----639");
-    region r3("-6259-7-4");
-    region r4("---------");
-    region r5("--7---32-");
-    region r6("---------");
-    region r7("---------");
-    region r8("173------");
-    region r9("---------");
+//    region r1("--9634125");
+//    region r2("51----639");
+//    region r3("-6259-7-4");
+//    region r4("---------");
+//    region r5("--7---32-");
+//    region r6("---------");
+//    region r7("---------");
+//    region r8("173------");
+//    region r9("---------");
     
     // Q 50
-//    region r1("-----6--9");
-//    region r2("--23----1");
-//    region r3("6-3--1-52");
-//    region r4("782----5-");
-//    region r5("---------");
-//    region r6("-9----726");
-//    region r7("24-8--6-5");
-//    region r8("1----48--");
-//    region r9("8--5-----");
+    region r1("-----6--9");
+    region r2("--23----1");
+    region r3("6-3--1-52");
+    region r4("782----5-");
+    region r5("---------");
+    region r6("-9----726");
+    region r7("24-8--6-5");
+    region r8("1----48--");
+    region r9("8--5-----");
     
     
     grid G(r1, r2, r3, r4, r5, r6, r7, r8, r9);

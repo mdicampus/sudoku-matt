@@ -11,6 +11,7 @@
 #include "OnlyOneChoiceInRegionVisitor.h"
 #include "OnlyOneChoiceInRowVisitor.h"
 #include "OnlySquareVisitor.h"
+#include "OnlySquareCombo.h"
 #include "TwoOutOfThreeColumnVisitor.h"
 #include "TwoOutOfThreeRowVisitor.h"
 #include "grid.h"
@@ -24,6 +25,7 @@ void SudokuSolver::solve(grid & G) const{
     OnlyOneChoiceInRowVisitor onlyRow;
     OnlyOneChoiceInRegionVisitor onlyRegion;
     OnlySquareVisitor onlySquare;
+    OnlySquareCombo onlyMe;
     TwoOutOfThreeRowVisitor twoRow;
     TwoOutOfThreeColumnVisitor twoCol;
     
@@ -32,6 +34,7 @@ void SudokuSolver::solve(grid & G) const{
         if (onlyRow.Visit(G)){ PAUSE continue;}
         if (onlyRegion.Visit(G)){ PAUSE continue;}
         if (onlySquare.Visit(G)){ PAUSE continue;}
+        if (onlyMe.Visit(G)){ PAUSE continue;}
         if (twoRow.Visit(G)){ PAUSE continue;}
         if (twoCol.Visit(G)){ PAUSE continue;}
         if (G.isFull()){
