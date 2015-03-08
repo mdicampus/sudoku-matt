@@ -16,8 +16,8 @@
 #include "grid.h"
 
 //#define PAUSE G.print();std::cout << "PAUSE:appuyez sur une touche";std::cin.ignore();
-//#define PAUSE G.print();std::cout;
-#define PAUSE
+#define PAUSE std::cout<<__LINE__<<std::endl; G.print();
+//#define PAUSE
 
 void SudokuSolver::solve(grid & G) const{
     OnlyOneChoiceInColumnVisitor onlyCol;

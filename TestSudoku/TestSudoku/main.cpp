@@ -23,24 +23,24 @@
 #include "SudokuSolver.h"
 
 int main(int argc, const char * argv[]) {
-    ValueEliminator e1, e2, e3, e4;
-    e1.flag(1);
-    e1.flag(2);
-    e2.flag(3);
-    e1 = e1 + e2;
-    e3.flag(5);
-    e3.flag(2);
-    e4 = e1 - e3;
+//    ValueEliminator e1, e2, e3, e4;
+//    e1.flag(1);
+//    e1.flag(2);
+//    e2.flag(3);
+//    e1 = e1 + e2;
+//    e3.flag(5);
+//    e3.flag(2);
+//    e4 = e1 - e3;
 
-    region r1("-19-----4");
-    region r2("-2-4-71-5");
-    region r3("---5-2-38");
-    region r4("4-28-71-6");
-    region r5("-3-2-9-4-");
-    region r6("7-54-13-9");
-    region r7("98-2-1---");
-    region r8("5-49-6-8-");
-    region r9("2-----19-");
+//    region r1("-19-----4");
+//    region r2("-2-4-71-5");
+//    region r3("---5-2-38");
+//    region r4("4-28-71-6");
+//    region r5("-3-2-9-4-");
+//    region r6("7-54-13-9");
+//    region r7("98-2-1---");
+//    region r8("5-49-6-8-");
+//    region r9("2-----19-");
     
     // partie 3
 //    region r1("-----6--9");
@@ -53,18 +53,32 @@ int main(int argc, const char * argv[]) {
 //    region r8("1----48--");
 //    region r9("8--5-----");
     
+    // Q46
+    region r1("--9634125");
+    region r2("51----639");
+    region r3("-6259-7-4");
+    region r4("---------");
+    region r5("--7---32-");
+    region r6("---------");
+    region r7("---------");
+    region r8("173------");
+    region r9("---------");
+    
     
     grid G(r1, r2, r3, r4, r5, r6, r7, r8, r9);
     G.print();
     
+    
+    
+    
     SudokuSolver solver;
-    
-    std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
+//    
+//    std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
     solver.solve(G);
-    std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
-    
-    std::cout << "duration : " << duration;
+//    std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
+//    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
+//    
+//    std::cout << "duration : " << duration;
     
     
     return 0;

@@ -62,8 +62,8 @@ void ValueEliminator::reset(){
 
 int ValueEliminator::otherAvailableValue(int value){
     for (int i=0;i<=8;i++){
-        if ((numbers[i] == false) and i != value){
-            return i;
+        if ((numbers[i] == false) and i+1 != value){
+            return i+1;
         }
     }
     throw "Cette fonction ne doit etre appelee que lorsque availableValues()==2";
@@ -88,7 +88,7 @@ availableValueContainer ValueEliminator::availableValue(){
         i=0;
         while(i<=8){
             if (numbers[i] == false){
-                res.singleValue = i;
+                res.singleValue = i+1;
                 return res;
             }
             i++;
@@ -98,7 +98,7 @@ availableValueContainer ValueEliminator::availableValue(){
     // il reste au moins 2 valeurs possibles
     for (i=0;i<=8;i++){
         if (numbers[i] == false){
-            res.multipleValues.insert(i);
+            res.multipleValues.insert(i+1);
         }
     }
     return res;
