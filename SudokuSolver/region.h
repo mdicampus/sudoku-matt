@@ -23,6 +23,7 @@ public:
     
     // méthodes
     bool isFull() const;
+    bool isConsistent() const;
 };
 
 #endif

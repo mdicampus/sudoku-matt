@@ -33,3 +33,15 @@ region::region(){
 bool region::isFull() const{
     return ~NO.isEmpty() and ~N.isEmpty() and ~NE.isEmpty() and ~O.isEmpty() and ~C.isEmpty() and ~E.isEmpty() and ~SO.isEmpty() and ~S.isEmpty() and ~SE.isEmpty();
 }
+
+bool region::isConsistent() const{
+    return
+    (NO.isEmpty() || ((NO != N) && (NO != NE) && (NO != O) && (NO != C) && (NO != E) && (NO != SO) && (NO != S) && (NO != SE))) &&
+    (N.isEmpty()  || ((N != NE) && (N != O) && (N != C) && (N != E) && (N != SO) && (N != S) && (N != SE))) &&
+    (NE.isEmpty() || ((NE != O) && (NE != C) && (NE != E) && (NE != SO) && (NE != S) && (NE != SE))) &&
+    (O.isEmpty()  || ((O != C) && (O != E) && (O != SO) && (O != S) && (O != SE))) &&
+    (C.isEmpty()  || ((C != E) && (C != SO) && (C != S) && (C != SE))) &&
+    (E.isEmpty()  || ((E != SO) && (E != S) && (E != SE))) &&
+    (SO.isEmpty() || ((SO != S) && (SO != SE))) &&
+    (S.isEmpty()  || (S != SE));
+}
