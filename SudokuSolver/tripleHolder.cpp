@@ -58,6 +58,13 @@ void tripleHolder::flagValues(ValueEliminator & eliminator){
     eliminator.flag(_c2);
     eliminator.flag(_c3);
 }
+
+bool tripleHolder::flagDuplicate(ValueEliminator & eliminator){
+    return eliminator.flagDuplicate(_c1) &&
+    eliminator.flagDuplicate(_c2) &&
+    eliminator.flagDuplicate(_c3);
+}
+
 cell & tripleHolder::c1(){
     return _c1;
 }

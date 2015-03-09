@@ -19,6 +19,7 @@ public:
     ValueEliminator(bool n1, bool n2, bool n3, bool n4, bool n5, bool n6, bool n7, bool n8, bool n9);
     
     void flag(int iValue);
+    bool flagDuplicate(int iValue);
     int availableValues();
     availableValueContainer availableValue();
     int otherAvailableValue(int value);
@@ -27,5 +28,6 @@ public:
     ValueEliminator operator-(ValueEliminator other);
     ValueEliminator operator*(ValueEliminator other);
     ValueEliminator operator~();
+    
 };
 #endif /* defined(__TestSudoku__ValueEliminator__) */

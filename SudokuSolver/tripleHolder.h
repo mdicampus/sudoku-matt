@@ -23,6 +23,7 @@ public:
     
     // methodes
     void flagValues(ValueEliminator & eliminator);
+    bool flagDuplicate(ValueEliminator & eliminator);
     bool isValuePresent(int value);
     int holes();
     void fill(int value);

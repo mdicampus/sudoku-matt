@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52D7192C1AACC1B200CF149B /* OnlySquareCombo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D7192A1AACC1B200CF149B /* OnlySquareCombo.cpp */; };
+		52D7192F1AAE395300CF149B /* nineHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52D7192D1AAE395300CF149B /* nineHolder.cpp */; };
 		662F5CD01A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */; };
 		666468311AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6664682F1AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp */; };
 		666468351AA5A56A00668815 /* SudokuSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 666468331AA5A56A00668815 /* SudokuSolver.cpp */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		52D7192A1AACC1B200CF149B /* OnlySquareCombo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlySquareCombo.cpp; sourceTree = "<group>"; };
 		52D7192B1AACC1B200CF149B /* OnlySquareCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlySquareCombo.h; sourceTree = "<group>"; };
+		52D7192D1AAE395300CF149B /* nineHolder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nineHolder.cpp; sourceTree = "<group>"; };
+		52D7192E1AAE395300CF149B /* nineHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nineHolder.h; sourceTree = "<group>"; };
 		662F5CCE1A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlyOneChoiceInRowVisitor.cpp; sourceTree = "<group>"; };
 		662F5CCF1A98D50400495037 /* OnlyOneChoiceInRowVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyOneChoiceInRowVisitor.h; sourceTree = "<group>"; };
 		6664682F1AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoOutOfThreeColumnVisitor.cpp; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				666468341AA5A56A00668815 /* SudokuSolver.h */,
 				669F56A11A93FE4900277317 /* tripleHolder.cpp */,
 				669F56A21A93FE4900277317 /* tripleHolder.h */,
+				52D7192D1AAE395300CF149B /* nineHolder.cpp */,
+				52D7192E1AAE395300CF149B /* nineHolder.h */,
 				6664682F1AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp */,
 				666468301AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.h */,
 				66D62C0A1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp */,
@@ -237,6 +242,7 @@
 				669F56641A93FC3F00277317 /* main.cpp in Sources */,
 				66D62C031AA4593A00223D54 /* availableValueContainer.cpp in Sources */,
 				662F5CD01A98D50400495037 /* OnlyOneChoiceInRowVisitor.cpp in Sources */,
+				52D7192F1AAE395300CF149B /* nineHolder.cpp in Sources */,
 				669F56AB1A93FE4900277317 /* rowHolder.cpp in Sources */,
 				66D62BFA1AA376C400223D54 /* OnlyOneChoiceInRegionVisitor.cpp in Sources */,
 				669F56AC1A93FE4900277317 /* tripleHolder.cpp in Sources */,

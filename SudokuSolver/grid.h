@@ -27,6 +27,8 @@ public:
     
     bool isFull() const;
     
+    bool isConsistent();
+    
     void Accept(IVisitor & visitor);
     
     void print();

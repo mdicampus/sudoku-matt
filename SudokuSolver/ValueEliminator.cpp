@@ -51,7 +51,9 @@ ValueEliminator::ValueEliminator(bool n1, bool n2, bool n3, bool n4, bool n5, bo
 
 // indiquer le chiffre iValue comme déjà vu
 void ValueEliminator::flag(int iValue){
-    numbers[iValue-1] = true;
+    if(iValue>0){
+        numbers[iValue-1] = true;
+    }
 }
 
 void ValueEliminator::reset(){
@@ -113,4 +115,14 @@ int ValueEliminator::availableValues(){
     }
     // le nombre de chiffres non vus est 9 - le nombre de chiffre vus
     return 9 - res;
+}
+
+bool ValueEliminator::flagDuplicate(int iValue){
+    if(iValue>0){
+        if(numbers[iValue-1]){
+            return false;
+        }
+        flag(iValue);
+    }
+    return true;
 }

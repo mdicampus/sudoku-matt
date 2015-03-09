@@ -64,13 +64,24 @@ int main(int argc, const char * argv[]) {
     region r8("1----48--");
     region r9("8--5-----");
     
+    // Q 51
+//    region r1("-6---6--9");
+//    region r2("--23----1");
+//    region r3("6-3--1-52");
+//    region r4("782----5-");
+//    region r5("---------");
+//    region r6("-9----726");
+//    region r7("24-8--6-5");
+//    region r8("1----48--");
+//    region r9("8--5-----");
+    
     
     grid G(r1, r2, r3, r4, r5, r6, r7, r8, r9);
     G.print();
     
     SudokuSolver solver;
-    std::cout<<r1.isConsistent();
-//    
+    std::cout<<G.isConsistent()<<std::endl;
+
 //    std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
 //    solver.solve(G);
     
