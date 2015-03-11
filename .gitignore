@@ -14,3 +14,4 @@ build/
 xcuserdata
 
 sujet.pdf
+.ipynb_checkpoints/
