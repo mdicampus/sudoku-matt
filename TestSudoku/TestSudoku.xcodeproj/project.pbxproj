@@ -27,7 +27,6 @@
 		66D62BFD1AA385EB00223D54 /* ValueEliminator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62BFB1AA385EB00223D54 /* ValueEliminator.cpp */; };
 		66D62C001AA39ED800223D54 /* NoAvailableValueException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62BFE1AA39ED700223D54 /* NoAvailableValueException.cpp */; };
 		66D62C031AA4593A00223D54 /* availableValueContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62C011AA4593A00223D54 /* availableValueContainer.cpp */; };
-		66D62C081AA466EF00223D54 /* OnlySquareVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62C061AA466EF00223D54 /* OnlySquareVisitor.cpp */; };
 		66D62C0C1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66D62C0A1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp */; };
 		66DA51D71A989FA0008898E6 /* IVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66DA51D51A989FA0008898E6 /* IVisitor.cpp */; };
 /* End PBXBuildFile section */
@@ -85,8 +84,6 @@
 		66D62BFF1AA39ED800223D54 /* NoAvailableValueException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoAvailableValueException.h; sourceTree = "<group>"; };
 		66D62C011AA4593A00223D54 /* availableValueContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = availableValueContainer.cpp; sourceTree = "<group>"; };
 		66D62C021AA4593A00223D54 /* availableValueContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = availableValueContainer.h; sourceTree = "<group>"; };
-		66D62C061AA466EF00223D54 /* OnlySquareVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnlySquareVisitor.cpp; sourceTree = "<group>"; };
-		66D62C071AA466EF00223D54 /* OnlySquareVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlySquareVisitor.h; sourceTree = "<group>"; };
 		66D62C0A1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoOutOfThreeRowVisitor.cpp; sourceTree = "<group>"; };
 		66D62C0B1AA4AF7E00223D54 /* TwoOutOfThreeRowVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoOutOfThreeRowVisitor.h; sourceTree = "<group>"; };
 		66DA51D51A989FA0008898E6 /* IVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IVisitor.cpp; sourceTree = "<group>"; };
@@ -156,8 +153,6 @@
 				662F5CCF1A98D50400495037 /* OnlyOneChoiceInRowVisitor.h */,
 				52D7192A1AACC1B200CF149B /* OnlySquareCombo.cpp */,
 				52D7192B1AACC1B200CF149B /* OnlySquareCombo.h */,
-				66D62C061AA466EF00223D54 /* OnlySquareVisitor.cpp */,
-				66D62C071AA466EF00223D54 /* OnlySquareVisitor.h */,
 				669F56981A93FE4900277317 /* region.cpp */,
 				669F56991A93FE4900277317 /* region.h */,
 				669F569A1A93FE4900277317 /* regionHolder.cpp */,
@@ -251,7 +246,6 @@
 				666468351AA5A56A00668815 /* SudokuSolver.cpp in Sources */,
 				66D62C001AA39ED800223D54 /* NoAvailableValueException.cpp in Sources */,
 				669F56AA1A93FE4900277317 /* regionHolder.cpp in Sources */,
-				66D62C081AA466EF00223D54 /* OnlySquareVisitor.cpp in Sources */,
 				666468311AA4ED4800668815 /* TwoOutOfThreeColumnVisitor.cpp in Sources */,
 				669F56A71A93FE4900277317 /* LastCellFinder.cpp in Sources */,
 				66D62BFD1AA385EB00223D54 /* ValueEliminator.cpp in Sources */,
