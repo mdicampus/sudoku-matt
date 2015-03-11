@@ -14,7 +14,6 @@
 
 bool OnlySquareCombo::Visit(grid & G) const{
     cell *target;
-    bool modif = false;
     //    std::set<cell> targets;
     //    std::set<int> values;
     //    std::set<int>::iterator it;
@@ -140,7 +139,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.N
         target = &G.hNO.N();
@@ -149,7 +148,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.NE
         target = &G.hNO.NE();
@@ -158,7 +157,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.O
         target = &G.hNO.O();
@@ -167,7 +166,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.C
         target = &G.hNO.C();
@@ -176,7 +175,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.E
         target = &G.hNO.E();
@@ -185,7 +184,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.SO
         target = &G.hNO.SO();
@@ -194,7 +193,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.S
         target = &G.hNO.S();
@@ -203,7 +202,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NO.SE
         target = &G.hNO.SE();
@@ -212,7 +211,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -226,7 +225,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.N
         target = &G.hN.N();
@@ -235,7 +234,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.NE
         target = &G.hN.NE();
@@ -244,7 +243,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.O
         target = &G.hN.O();
@@ -253,7 +252,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.C
         target = &G.hN.C();
@@ -262,7 +261,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.E
         target = &G.hN.E();
@@ -271,7 +270,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.SO
         target = &G.hN.SO();
@@ -280,7 +279,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.S
         target = &G.hN.S();
@@ -289,7 +288,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule N.SE
         target = &G.hN.SE();
@@ -298,7 +297,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -311,7 +310,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.N
         target = &G.hNE.N();
@@ -320,7 +319,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.NE
         target = &G.hNE.NE();
@@ -329,7 +328,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.O
         target = &G.hNE.O();
@@ -338,7 +337,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.C
         target = &G.hNE.C();
@@ -347,7 +346,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.E
         target = &G.hNE.E();
@@ -356,7 +355,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.SO
         target = &G.hNE.SO();
@@ -365,7 +364,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.S
         target = &G.hNE.S();
@@ -374,7 +373,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule NE.SE
         target = &G.hNE.SE();
@@ -383,7 +382,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -396,7 +395,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.N
         target = &G.hO.N();
@@ -405,7 +404,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.NE
         target = &G.hO.NE();
@@ -414,7 +413,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.O
         target = &G.hO.O();
@@ -423,7 +422,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.C
         target = &G.hO.C();
@@ -432,7 +431,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.E
         target = &G.hO.E();
@@ -441,7 +440,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.SO
         target = &G.hO.SO();
@@ -450,7 +449,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.S
         target = &G.hO.S();
@@ -459,7 +458,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule O.SE
         target = &G.hO.SE();
@@ -468,7 +467,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -481,7 +480,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.N
         target = &G.hC.N();
@@ -490,7 +489,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.NE
         target = &G.hC.NE();
@@ -499,7 +498,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.O
         target = &G.hC.O();
@@ -508,7 +507,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.C
         target = &G.hC.C();
@@ -517,7 +516,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.E
         target = &G.hC.E();
@@ -526,7 +525,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.SO
         target = &G.hC.SO();
@@ -535,7 +534,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.S
         target = &G.hC.S();
@@ -544,7 +543,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule C.SE
         target = &G.hC.SE();
@@ -553,7 +552,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -566,7 +565,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.N
         target = &G.hE.N();
@@ -575,7 +574,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.NE
         target = &G.hE.NE();
@@ -584,7 +583,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.O
         target = &G.hE.O();
@@ -593,7 +592,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.C
         target = &G.hE.C();
@@ -602,7 +601,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.E
         target = &G.hE.E();
@@ -611,7 +610,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.SO
         target = &G.hE.SO();
@@ -620,7 +619,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.S
         target = &G.hE.S();
@@ -629,7 +628,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule E.SE
         target = &G.hE.SE();
@@ -638,7 +637,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -651,7 +650,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.N
         target = &G.hSO.N();
@@ -660,7 +659,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.NE
         target = &G.hSO.NE();
@@ -669,7 +668,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.O
         target = &G.hSO.O();
@@ -678,7 +677,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.C
         target = &G.hSO.C();
@@ -687,7 +686,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.E
         target = &G.hSO.E();
@@ -696,7 +695,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.SO
         target = &G.hSO.SO();
@@ -705,7 +704,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.S
         target = &G.hSO.S();
@@ -714,7 +713,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SO.SE
         target = &G.hSO.SE();
@@ -723,7 +722,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -735,7 +734,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.N
         target = &G.hS.N();
@@ -744,7 +743,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.NE
         target = &G.hS.NE();
@@ -753,7 +752,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.O
         target = &G.hS.O();
@@ -762,7 +761,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.C
         target = &G.hS.C();
@@ -771,7 +770,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.E
         target = &G.hS.E();
@@ -780,7 +779,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.SO
         target = &G.hS.SO();
@@ -789,7 +788,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.S
         target = &G.hS.S();
@@ -798,7 +797,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule S.SE
         target = &G.hS.SE();
@@ -807,7 +806,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
@@ -820,7 +819,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.N
         target = &G.hSE.N();
@@ -829,7 +828,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.NE
         target = &G.hSE.NE();
@@ -838,7 +837,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.O
         target = &G.hSE.O();
@@ -847,7 +846,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.C
         target = &G.hSE.C();
@@ -856,7 +855,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.E
         target = &G.hSE.E();
@@ -865,7 +864,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.SO
         target = &G.hSE.SO();
@@ -874,7 +873,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.S
         target = &G.hSE.S();
@@ -883,7 +882,7 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
         // pour la cellule SE.SE
         target = &G.hSE.SE();
@@ -892,9 +891,9 @@ bool OnlySquareCombo::Visit(grid & G) const{
         if (target->isEmpty() and (eliminator.availableValues() == 1)){
             oValue = eliminator.availableValue().singleValue;
             target->set(oValue);
-            modif = true;
+            return true;
         }
     }
     
-    return modif;
+    return false;
 }

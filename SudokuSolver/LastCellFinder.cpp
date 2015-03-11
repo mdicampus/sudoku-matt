@@ -40,11 +40,11 @@ bool LastCellFinder::fill(){
     seen[_t3.c2()] = 1;
     seen[_t3.c3()] = 1;
     
-    int sum = 0;
-    for (int i=1; i<10; i++){
-        sum += seen[i];
-    }
-    // int sum = (seen[1] + seen[2] + seen[3] + seen[4] + seen[5] + seen[6] + seen[7] + seen[8] + seen[9]);
+//    int sum = 0;
+//    for (int i=1; i<10; i++){
+//        sum += seen[i];
+//    }
+     int sum = (seen[1] + seen[2] + seen[3] + seen[4] + seen[5] + seen[6] + seen[7] + seen[8] + seen[9]);
     // std::cout << "nombre de valeurs : " << sum << "\n";
     
     if (sum == 8){
